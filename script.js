@@ -1,9 +1,28 @@
-//complete this code
-class Person {}
+//SGN complete this code
+class Person {
+	constructor(name, age) {
+		this._name = name;
+		this._age = age;
+	}
+	get name() {
+		return this._name;
+	}
+	set age(newAge){
+		this._age = newAge;
+	}
+}
 
-class Student extends Person {}
+class Student extends Person {
+	function study() {
+		return `${this.name} is studying`;
+	}
+}
 
-class Teacher extends Person {}
+class Teacher extends Person {
+	function teach() {
+		return `${this.name} is teaching`;
+	}
+}
 
 // Do not change the code below this line
 window.Person = Person;
